@@ -2,6 +2,27 @@
 
 Es un proyecto de práctica de la utilización de Swagger con Laravel 5.8.
 
+<h2>Requerimientos de Laravel</h2>
+
+PHP >= 7.1.3
+
+BCMath PHP Extension
+
+Ctype PHP Extension
+
+JSON PHP Extension
+
+Mbstring PHP Extension
+
+OpenSSL PHP Extension
+
+PDO PHP Extension
+
+Tokenizer PHP Extension
+
+XML PHP Extension
+
+
 <h2>Instalación</h2>
 
 Luego de clonar el repositorio, debe dirigirse al directorio y correr el siguiente comando para generar los archivos de Laravel.
