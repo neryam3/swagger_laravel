@@ -1,0 +1,105 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API Super Heroes",
+        "version": "1.0"
+    },
+    "servers": [
+        {
+            "url": "http://127.0.0.1:8000"
+        }
+    ],
+    "paths": {
+        "/api/superheroes": {
+            "get": {
+                "summary": "Mostrar Super Heroes",
+                "operationId": "App\\Http\\Controllers\\Api\\SuperheroeController::index",
+                "responses": {
+                    "200": {
+                        "description": "Mostrar todos los super heroes de diferentes productoras."
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Registrar nuevo super heroes",
+                "operationId": "App\\Http\\Controllers\\Api\\SuperheroeController::store",
+                "responses": {
+                    "200": {
+                        "description": "Se crea nuevo super heroe"
+                    },
+                    "201": {
+                        "description": "Created."
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/superheroes/{superheroe}": {
+            "get": {
+                "summary": "Mostrar un super heroe",
+                "operationId": "App\\Http\\Controllers\\Api\\SuperheroeController::show",
+                "responses": {
+                    "200": {
+                        "description": "Muestra un super heroe"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Modificar un super heroe",
+                "operationId": "App\\Http\\Controllers\\Api\\SuperheroeController::update",
+                "responses": {
+                    "200": {
+                        "description": "Se modificó un super heroe"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "409": {
+                        "description": "Conflict"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Eliminar un super heroe",
+                "operationId": "App\\Http\\Controllers\\Api\\SuperheroeController::destroy",
+                "responses": {
+                    "200": {
+                        "description": "Eliminar un super heroe."
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    }
+                }
+            }
+        }
+    }
+}
