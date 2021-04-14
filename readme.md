@@ -41,7 +41,7 @@ DB_USERNAME=root
 DB_PASSWORD=
 </code>
 
-En ocaciones también debe ejecutar el siguiente comando para generar el APP_KEY.
+En ocasiones también debe ejecutar el siguiente comando para generar el APP_KEY.
 
 <code>php artisan key:generate</code>
 
