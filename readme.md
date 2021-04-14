@@ -4,6 +4,8 @@ Es un proyecto de práctica de la utilización de Swagger con Laravel 5.8.
 
 <h2>Requerimientos previos de Laravel</h2>
 
+COMPOSER (https://getcomposer.org/)
+
 PHP >= 7.1.3
 
 BCMath PHP Extension
