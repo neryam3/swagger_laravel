@@ -11,8 +11,10 @@ Luego de clonar el repositorio, debe dirigirse al directorio y correr el siguien
 Luego modificar el nombre del archivo <b>.env.example</b> a <b>.env</b> que se encuentra en la raíz del proyecto y modificar el contenido con sus credenciales para conectarse a su base de datos.
 
 <code>
-DB_DATABASE=DB_NAME</br>
-DB_USERNAME=root</br>
+DB_DATABASE=DB_NAME
+    
+DB_USERNAME=root
+
 DB_PASSWORD=
 </code>
 
@@ -25,6 +27,7 @@ Una vez haya configurado la conexión con la DB debe ejecutar las migraciones pa
 <code>php artisan migrate</code>
 
 Cuando se creen las tablas debe ejecutar el siguiente comando para generar los datos de prueba:
+
 <code>php artisan db:seed</code>
 
 Una vez hecho estos pasos, solo queda iniciar la aplicación con el siguiente comando:
